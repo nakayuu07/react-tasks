@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import App from './App';
+import Tasks from './Tasks';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Tasks />, document.getElementById('root'));

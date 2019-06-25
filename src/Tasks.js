@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'reactstrap';
 
-class App extends React.Component {
+class Tasks extends React.Component {
   render(){
     return (
       <Button>
@@ -11,4 +11,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Tasks;
