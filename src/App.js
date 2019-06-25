@@ -1,13 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Button } from 'reactstrap';
 
-function App() {
-  return (
-    <div>
-      hello react
-    </div>
-  )
+class App extends React.Component {
+  render(){
+    return (
+      <Button>
+        hello react
+      </Button>
+    )
+  }
 }
 
 export default App;
