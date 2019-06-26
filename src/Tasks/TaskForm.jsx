@@ -1,23 +1,20 @@
 import React from 'react';
 import Btn from './Btn'
-import CustomForm from './CustomForm'
+import InputForm from './InputForm'
 
 const TaskForm = ({
   title, 
   color,
   size,
   placeholder,
-  inputType,
   name,
-  label,
 }) => {
   return (
     <React.Fragment>
-      <CustomForm
+      <InputForm
         name={name}
         size={size}
         placeholder={placeholder}
-        inputType={inputType}
       />
       <Btn
         title={title}

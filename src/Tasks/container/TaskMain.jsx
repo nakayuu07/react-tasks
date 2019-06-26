@@ -6,9 +6,8 @@ class TaskMain extends React.Component {
     return (
       <TaskForm
         name={'task'}
-        size={{sm: 4}}
+        size={ {sm: 4} }
         placeholder={'タスク名'}
-        inputType={'text'}
         title={'追加'} 
         color={'success'}
       />
