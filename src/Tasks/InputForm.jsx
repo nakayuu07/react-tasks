@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Form, FormGroup, Input } from 'reactstrap';
 
 
-const CustomForm = ({ 
+const InpputForm = ({ 
   size,
   placeholder,
   inputType,
@@ -12,11 +12,11 @@ const CustomForm = ({
     <Form>
       <FormGroup row>
         <Col sm={size ? size.sm : 6}>
-          <Input type={inputType} name={name}  placeholder={placeholder} />
+          <Input type='text' name={name}  placeholder={placeholder} />
         </Col>
       </FormGroup>
     </Form>
   )
 }
 
-export default CustomForm
+export default InpputForm
