@@ -7,16 +7,21 @@ const TaskForm = ({
   color,
   size,
   placeholder,
-  name,
+  taskName,
+  handleAddTask,
+  handleChangeTitle
 }) => {
   return (
     <React.Fragment>
       <InputForm
-        name={name}
+        taskName={taskName}
         size={size}
         placeholder={placeholder}
+        handleChangeTitle={handleChangeTitle}
       />
       <Btn
+        taskName={taskName}
+        handleAddTask={handleAddTask}
         title={title}
         color={color}
       />
