@@ -2,17 +2,22 @@ import React from 'react';
 import { Col, Form, FormGroup, Input } from 'reactstrap';
 
 
-const InpputForm = ({ 
+const InpputForm = ({
   size,
   placeholder,
-  inputType,
-  name,
+  handleChangeTitle,
+  taskName
 }) => {
   return (
     <Form>
       <FormGroup row>
         <Col sm={size ? size.sm : 6}>
-          <Input type='text' name={name}  placeholder={placeholder} />
+          <Input
+            type='text'
+            value={taskName}
+            placeholder={placeholder}
+            onChange={(e) => handleChangeTitle(e)}
+          />
         </Col>
       </FormGroup>
     </Form>
